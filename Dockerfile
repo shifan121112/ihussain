@@ -3,10 +3,10 @@ MAINTAINER rashid78631@gmail.com
 RUN yum install -y httpd \
  zip \
  unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page258/logxury.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page273/speed.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip logxury.zip
-RUN cp -rvf loxury/* /var/www/html/
-RUN rm -rf loxury  logxury.zip
+RUN unzip speed.zip
+RUN cp -rvf speed/* /var/www/html/
+RUN rm -rf speed  speed.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
